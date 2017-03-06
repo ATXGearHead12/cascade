@@ -13,3 +13,21 @@ but it is not using reactiveForms.
 
 When the screen loads there are no errors in the console.   The dropdown for states has a list of states.   When selecting a state this occurs...
 Error in ./MainComponent class MainComponent - inline template:11:16 caused by: Cannot read property 'value' of undefined 
+
+## Conclusion 
+
+You need to take a look at material source code https://github.com/angular/material2/blob/master/src/lib/select/select.ts#L247
+
+@Output() change: EventEmitter<MdSelectChange> = new EventEmitter<MdSelectChange>();
+as you can see there is emitted event with MdSelectChange payload
+
+export class MdSelectChange {
+  constructor(public source: MdSelect, public value: any) { }
+}
+
+On the main.componet.html replace
+
+(change)="onSelect($event.target.value)"
+with
+
+(change)="onSelect($event.value)"

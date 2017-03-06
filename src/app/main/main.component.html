@@ -9,7 +9,7 @@
           <div class="flex-container" fxLayout="row" fxLayoutAlign="left left">
             <div class="flex-container" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around space-around" fxFlex="97%">
               <div class="flex-oneStudent" fxFlex="10%">
-                <md-select placeholder="State" formControlName="state" required="true" (change)="onSelect($event.target.value)">
+                <md-select placeholder="State" formControlName="state" required="true" (change)="onSelect($event.value)">
                   <md-option *ngFor="let oneState of allStates" [value]="oneState.state">
                     {{ oneState.state }}
                   </md-option>
