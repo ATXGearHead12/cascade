@@ -1,0 +1,31 @@
+<div class="card-container">
+  <md-card>
+    <md-card-title>
+      <h3>Testing Cascade Material Design</h3>
+    </md-card-title>
+    <md-card-content>
+      <div *ngIf='allStates'>
+        <form novalidate [formGroup]="myForm">
+          <div class="flex-container" fxLayout="row" fxLayoutAlign="left left">
+            <div class="flex-container" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around space-around" fxFlex="97%">
+              <div class="flex-oneStudent" fxFlex="10%">
+                <md-select placeholder="State" formControlName="state" required="true" (change)="onSelect($event.target.value)">
+                  <md-option *ngFor="let oneState of allStates" [value]="oneState.state">
+                    {{ oneState.state }}
+                  </md-option>
+                </md-select>
+              </div>
+              <div class="flex-oneStudent" fxFlex="20%">
+                <md-select placeholder="City" formControlName="city" required="true">
+                  <md-option *ngFor="let oneCity of cityByState" [value]="oneCity.city">
+                    {{ oneCity.city }}
+                  </md-option>
+                </md-select>
+              </div>
+              <div fxFlex="67%"> </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </md-card-content>
+  </md-card>

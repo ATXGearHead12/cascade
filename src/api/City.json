@@ -1,0 +1,17 @@
+[
+{"id":8,"state":"New York","city":"New York City","last_name":"Matthews"},
+{"id":13,"state":"New York","city":"Schenectady","last_name":"Sims"},
+{"id":20,"state":"New York","city":"Mount Vernon","last_name":"Crawford"},
+{"id":31,"state":"New York","city":"Albany","last_name":"Frazier"},
+{"id":7,"state":"Texas","city":"Dallas","last_name":"Mendoza"},
+{"id":10,"state":"Texas","city":"Houston","last_name":"Reed"},
+{"id":37,"state":"Texas","city":"Mesquite","last_name":"Dixon"},
+{"id":14,"state":"Florida","city":"Miami","last_name":"Gonzales"},
+{"id":28,"state":"Florida","city":"Naples","last_name":"Austin"},
+{"id":33,"state":"Florida","city":"Orlando","last_name":"Kelly"},
+{"id":35,"state":"Florida","city":"Sarasota","last_name":"Thomas"},
+{"id":36,"state":"Florida","city":"Clearwater","last_name":"Wheeler"},
+{"id":15,"state":"Michigan","city":"Grand Rapids","last_name":"Pierce"},
+{"id":91,"state":"Michigan","city":"Saginaw","last_name":"Patterson"},
+{"id":106,"state":"Michigan","city":"Troy","last_name":"Roberts"}
+]

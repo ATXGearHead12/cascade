@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.icon-20 {
+    font-size: 20px;
+}
+
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+md-card {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    border-top: single;
+}
+
+md-card-container {
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+tr th {
+    background-color: #00bcd4;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: lightgray;
+}
+
+tbody tr:nth-child(even) {
+   background-color: lightblue;
+}
